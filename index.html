@@ -1,27 +1,75 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Managethis</title>
-
-    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-    <link rel="stylesheet" href="css/vender.min.css">
-    <link rel="stylesheet" href="css/core.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/vender.min.css">
+	<link rel="stylesheet" href="css/core.css">
+    
+	<title>Home</title> <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 </head>
+
 <body data-controller="index" data-action="common">
-    <div class="cd-tabs">
-        <nav>
-            <ul class="cd-tabs-navigation">
-            </ul>
-        </nav>
+<div class="cd-tabs">
+	<nav>
+		<ul class="cd-tabs-navigation">
+			<li><a data-content="Home" class="selected" href=""><span class="fa fa-home fa-lg"></span> Home</a></li>
+			<li><a data-content="Transmission" href=""><span class="fa fa-download fa-lg"></span> Transmission</a></li>
+			<li><a data-content="Guacamole" href=""><span class="fa fa-cloud fa-lg"></span> Guacamole</a></li>
+			<li><a data-content="DokuWiki" href=""><span class="fa fa-database fa-lg"></span> Wiki</a></li>
+			<li><a data-content="PasswordSafe" href=""><span class="fa fa-server fa-lg"></span> Password Safe</a></li>
+			<li><a data-content="Sonarr" href=""><span class="glyphicon glyphicon-calendar fa-lg"></span> Sonarr</a></li>
+			<li><a data-content="CouchPotato" href=""><span class="fa fa-television fa-lg"></span> CouchPotato</a></li>
+			<li><a data-content="Headphones" href=""><span class="glyphicon glyphicon-headphones fa-lg"></span> Headphones</a></li>
+			<li><a data-content="Glances" href=""><span class="glyphicon glyphicon-dashboard fa-lg"></span> Glances</a></li>
+			<li><a data-content="Plex" href=""><span class="fa fa-play-circle fa-lg"></span> Plex</a></li>
+		</ul>
+	</nav>
 
-        <ul class="cd-tabs-content">
-        </ul>
-    </div>
+	<ul class="cd-tabs-content">
+		<li data-content="Home" class="selected">
+			<iframe scrolling=auto src="landing/home.html" style="width:100%;"></iframe>
+		</li>
 
-    <script src="js/vender.min.js"></script>
-    <script src="js/core.min.js"></script>
+		<li data-content="Transmission">
+			<iframe scrolling=auto src="landing/transmission.html" style="width:100%;"></iframe>
+		</li>
+		
+		<li data-content="Guacamole">
+			<iframe scrolling=no src="landing/guacamole.html" style="width:100%;"></iframe>
+		</li>
+			
+		<li data-content="DokuWiki">
+			<iframe scrolling=auto src="landing/wiki.html" style="width:100%;"></iframe>
+		</li>
+			
+		<li data-content="PasswordSafe">
+			<iframe scrolling=auto src="landing/passwordSafe.html" style="width:100%;"></iframe>
+    </li>
+
+		<li data-content="Sonarr">
+			<iframe scrolling=auto src="landing/sonarr.html" style="width:100%;"></iframe>
+		</li>
+
+		<li data-content="CouchPotato">
+			<iframe scrolling=auto src="landing/couchpotato.html" style="width:100%;"></iframe>
+		</li>
+
+		<li data-content="Headphones">
+			<iframe scrolling=auto src="landing/headphones.html" style="width:100%;"></iframe>
+		</li>
+
+    <li data-content="Glances">
+			<iframe scrolling=auto src="landing/glances.html" style="width:100%;"></iframe>
+    </li>
+
+		<li data-content="Plex">
+			<iframe scrolling=auto src="landing/plex.html" style="width:100%;"></iframe>
+    </li>
+  </ul>
+</div>
+
+<script src="js/vender.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
