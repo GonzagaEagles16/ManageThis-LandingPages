@@ -1,3 +1,5 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +27,20 @@ body, input, button {
   min-height: 400px;
   margin: 2% auto 0 auto;
 }
-.login .heading {
+.heading {
   text-align: center;
   margin-top: 1%;
 }
-.login .heading h2 {
+.heading h2 {
   font-size: 3em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 3px #23203b;
+}
+h3 {
+	font-size: 1.5em;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
